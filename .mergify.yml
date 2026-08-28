@@ -1,0 +1,6 @@
+scopes:
+  source:
+    manual:
+
+queue_rules:
+  - name: default

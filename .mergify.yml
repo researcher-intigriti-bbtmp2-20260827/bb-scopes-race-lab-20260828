@@ -2,5 +2,13 @@ scopes:
   source:
     manual:
 
-queue_rules:
-  - name: default
+pull_request_rules:
+  - name: bb commit-scope stale authorization impact
+    conditions:
+      - base = bb-commit-scope-stale-base2-20260829
+      - draft = false
+      - title = BB commit scope stale authorization impact
+      - scope = docs
+    actions:
+      merge:
+        method: merge
